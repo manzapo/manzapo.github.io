@@ -1,0 +1,27 @@
+{{ define "main" }}
+	<div class="container">
+		<!-- kind = section -->
+		<!-- type = series -->
+		<div class="card my-3 my-xl-5">
+			<div class="card-header">{{ .Page.Title }}</div>
+			<div class="list-group list-group-flush">
+				{{ range .Pages }}
+					<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">
+						<div class="lead fw-bold">{{ .Title }}</div>
+						<small class="text-muted">{{ .Description }}</small>
+					</a>
+				{{ end }}
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+<script type="text/javascript">
+	window.addEventListener('load', function () {
+		var tabActive = document.getElementById("nav-series");
+		tabActive.classList.add("active");
+	});
+</script>
+<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+{{ end }}

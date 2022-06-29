@@ -1,0 +1,40 @@
+{{ define "main" }}
+	<!-- type series -->
+	<div class="container">
+		<nav class="breadcrumb breadcrumb-scroller py-2 mb-0">
+			<a class="breadcrumb-item text-decoration-none" href="/">Beranda</a>
+			{{ with .Site.GetPage "/content/series/_index.md" }}
+				<a href="{{ .Permalink }}" class="breadcrumb-item text-decoration-none">{{ .Title }}</a>
+			{{ end }}
+			<span class="breadcrumb-item active">{{ .Page.Title }}</span>
+		</nav>
+		<div class="row my-3 my-xl-5">
+			<div class="col-md-8 col-xl-9">
+				<div class="card">
+					<div class="card-header">{{ .Page.Description }}</div>
+					<div class="list-group list-group-flush">
+						{{ range .Pages.ByDate }}
+							<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">
+								<div class="lead fw-bold">{{ .Title }}</div>
+								<small class="text-muted">{{ .Description }}</small>
+							</a>
+						{{ end }}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-xl-3">
+				{{ partial "sidebar.html" . }}
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+<script type="text/javascript">
+	window.addEventListener('load', function () {
+		var tabActive = document.getElementById("nav-series");
+		tabActive.classList.add("active");
+	});
+</script>
+{{ end }}

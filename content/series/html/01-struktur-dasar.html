@@ -1,0 +1,21 @@
+---
+date       : 2022-02-05T15:50:21+07:00
+title      : Struktur Dasar HTML
+description: Fundamental untuk mulai belajar pemrograman berbasis web
+slug       : struktur-dasar
+layout     : highlight
+---
+<p>HTML (<em>Hypertext Markup Language</em>) adalah bahasa pemrograman yang digunakan untuk membuat halaman web. Struktur dasarnya seperti <code>contoh code</code> berikut</p>
+<pre><code class="language-html">&lt;html&gt; &lt;!-- awal dokumen html --&gt;
+  &lt;head&gt; &lt;!-- element pendukung dokumen disimpan dalam head --&gt;
+    &lt;title&gt;Judul Laman&lt;/title&gt; &lt;!-- judul halaman --&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Konten untuk ditampilkan ditulis disini (dalam body) --&gt;
+    Hello World!
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Kode bahasa pemrograman HTML ditulis dengan teks editor. Sebagai permulaan silakan salin kode di atas, masukkan dalam dokumen teks, dan simpan dalam format html (nama file: index.html)</p>
+<p>Perhatikan secara seksama, disetiap <code>&lt;sintaks&gt;</code> selalu diikuti (ditutup) dengan <code>&lt;/sintaks&gt;</code>. Hal ini dimaksudkan untuk menandai barisan kode yang ditulis merupakan bagian dari sebuah blok. Perhatikan sintaks <code>title</code> yang berada dalam blok <code>head</code>, menandakan bagian <code>head</code> bisa memprosesnya sebagai sebuah bagian dari dirinya (head), begitu sebaliknya bagian <code>body</code> tidak bisa mengakses kode <code>title</code> tersebut.</p>
+<p class="bg-success bg-opacity-10 p-3"><strong>Biasakan</strong> untuk menuliskan <code>&lt;sintaks&gt;</code> sepasang sekaligus dengan penutupnya <code>&lt;/sintaks&gt;</code> yang ditandai dengan <em>backslash</em> didepan sintaks yang kedua</p>

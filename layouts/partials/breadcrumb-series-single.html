@@ -1,0 +1,10 @@
+<nav class="breadcrumb breadcrumb-scroller py-2 mb-0">
+	<a class="breadcrumb-item text-decoration-none" href="{{ "/" | absURL }}">Beranda</a>
+	{{ with .Site.GetPage "/content/series/_index.md" }}
+		<a href="{{ .Permalink }}" class="breadcrumb-item text-decoration-none">{{ .Title }}</a>
+	{{ end }}
+	{{ with .CurrentSection }}
+		<a href="{{ .Permalink }}" class="breadcrumb-item text-decoration-none">{{ .Title }}</a>
+	{{ end }}
+	<span class="breadcrumb-item active">{{ .Page.Date.Format "2 January, 2006" }}</span>
+</nav>

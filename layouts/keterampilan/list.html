@@ -1,0 +1,14 @@
+{{ define "main" }}
+	<div class="container mb-5">
+		<div class="row justify-content-sm-center">
+			<div class="col-sm-9 col-md-8 col-lg-6 col-xxl-5">
+				<h1 class="my-3 mt-sm-5 my-xxl-5 ms-sm-3">{{ .Page.Title }}</h1>
+				<div class="list-group mb-3 mb-xxl-5">
+					{{ range .Pages.ByTitle }}
+						<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">{{ .Title }}</a>
+					{{ end }}
+				</div>
+			</div>
+		</div>
+	</div>
+{{ end }}

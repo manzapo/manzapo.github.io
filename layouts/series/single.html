@@ -1,0 +1,32 @@
+{{ define "navbar" }}
+	{{ partial "navbar.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<div class="bg-light mb-3 mb-xxl-5">
+		<div class="container">
+			{{ partial "breadcrumb-series-single.html" . }}
+			<div class="text-center py-3 py-xl-5">
+				<h1 class="fs-1">{{ .Page.Title }}</h1>
+				<p class="lead mb-0">{{ .Page.Description }}</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row justify-content-xl-center">
+			<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-6"><!-- sm:516 md:516 lg:536 xl:546-636 xxl:526 -->
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+<script type="text/javascript">
+	window.addEventListener('load', function () {
+		var tabActive = document.getElementById("nav-series");
+		tabActive.classList.add("active");
+	});
+</script>
+{{ end }}

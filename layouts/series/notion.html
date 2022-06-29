@@ -1,0 +1,23 @@
+{{ define "navbar" }}
+	{{ partial "navbar.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<div class="container mb-5">
+		{{ partial "breadcrumb-series-single.html" . }}
+		<div class="row justify-content-xl-center">
+			<div class="col-md-9 col-lg-7 col-xl-7 col-xxl-7"><!-- sm:516 md:516 lg:536 xl:546-636 xxl:526 -->
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+<script type="text/javascript">
+	window.addEventListener('load', function () {
+		var tabActive = document.getElementById("nav-series");
+		tabActive.classList.add("active");
+	});
+</script>
+{{ end }}
