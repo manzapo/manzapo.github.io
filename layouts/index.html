@@ -1,6 +1,10 @@
+{{ define "navbar" }}
+	{{ partial "navbar-home.html" . }}
+{{ end }}
+
 {{ define "main" }}
 	<div class="container">
-		<div id="carouselExampleFade" class="carousel slide carousel-fade mt-xxl-4" data-bs-ride="carousel">
+		<div id="carouselExampleFade" class="carousel slide carousel-fade mt-lg-3 mt-xl-3 mt-xxl-4" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="{{ "img/slide1.svg" | absURL }}" class="d-block w-100">
@@ -22,28 +26,28 @@
 			</button>
 		</div>
 
-		<div class="row justify-content-center my-xxl-5" id="hero">
-			<div class="col-xxl-6 text-xxl-center">
+		<div class="row justify-content-center my-4 my-lg-5" id="hero">
+			<div class="col-lg-8 col-xl-8 col-xxl-6 text-lg-center">
 				<h2 class="fw-light">Laman dikelola secara <span class="fw-bold text-success">kolektif</span> untuk tujuan <span class="fw-bold text-success">pengarsipan</span> dan <span class="fw-bold text-success">mengabarkan</span> kebaikan</h2>
 			</div>
 		</div>
 
-		<div class="row mb-xxl-5" id="features">
-			<div class="col-xxl-4">
+		<div class="row mb-lg-5 mb-xl-5 mb-xxl-5" id="features">
+			<div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
 				<div class="card bg-light">
 					<div class="card-body">
 						<p class="card-text">Featured title</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-xxl-4">
+			<div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
 				<div class="card bg-light">
 					<div class="card-body">
 						<p class="card-text">Featured title</p>
 					</div>
 				</div>
 			</div>
-			<div class="col-xxl-4">
+			<div class="col-md-4 col-lg-4 col-xl-4 col-xxl-4">
 				<div class="card bg-light">
 					<div class="card-body">
 						<p class="card-text">Featured title</p>
@@ -52,47 +56,60 @@
 			</div>
 		</div>
 
-		<div class="row mb-xxl-5">
-			<div class="col-xxl-9 mb-xxl-4">
+		<div class="row" id="posts">
+			<div class="col-lg-8 col-xl-9 col-xxl-9 mb-3 mb-xl-3 mb-xxl-4">
 				<div class="d-flex align-items-center border-bottom">
 					<h2 class="flex-grow-1">Unggahan terkini</h2>
 					<a href="#" class="btn btn-outline-success btn-sm">Lainnya</a>
 				</div>
 			</div>
-			<div class="col-xxl-9">
-				<div class="d-flex align-items-center me-xxl-5 mb-xxl-5">
-					<div class="flex-shrink-0">
-						<img src="holder.js/482x241">
+			<div class="col-md-8 col-lg-8 col-xl-9 col-xxl-9 mb-xxl-4">
+				<div class="row justify-content-sm-center justify-content-xxl-start align-items-lg-center mb-4">
+					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-6 mb-2">
+						<img src="{{ "img/home-thumb.jpg" | absURL }}" class="img-fluid"><!-- holder.js/482x241 -->
 					</div>
-					<div class="flex-grow-1 ms-xxl-4">
+					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-5">
 						<a href="#" class="text-decoration-none link-dark h5">This is some content from a media component. You can replace this with any content and adjust it as needed</a>
-						<div class="small mt-xxl-3">
+						<div class="small mt-2 mt-xxl-3">
 							<span class="text-dark pe-2">Kategori</span>
 							<span class="text-muted">Tanggal</span>
 						</div>
 					</div>
 				</div>
-				<div class="d-flex align-items-center me-xxl-5 mb-xxl-5">
-					<div class="flex-shrink-0">
-						<img src="holder.js/482x241">
+				<div class="row justify-content-sm-center justify-content-xxl-start align-items-lg-center mb-4">
+					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-6 mb-2">
+						<img src="{{ "img/home-thumb.jpg" | absURL }}" class="img-fluid"><!-- holder.js/482x241 -->
 					</div>
-					<div class="flex-grow-1 ms-xxl-4">
+					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-5">
 						<a href="#" class="text-decoration-none link-dark h5">This is some content from a media component. You can replace this with any content and adjust it as needed</a>
-						<div class="small mt-xxl-3">
+						<div class="small mt-2 mt-xxl-3">
+							<span class="text-dark pe-2">Kategori</span>
+							<span class="text-muted">Tanggal</span>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-sm-center justify-content-xxl-start align-items-lg-center mb-4">
+					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-6 mb-2">
+						<img src="{{ "img/home-thumb.jpg" | absURL }}" class="img-fluid"><!-- holder.js/482x241 -->
+					</div>
+					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-5">
+						<a href="#" class="text-decoration-none link-dark h5">This is some content from a media component. You can replace this with any content and adjust it as needed</a>
+						<div class="small mt-2 mt-xxl-3">
 							<span class="text-dark pe-2">Kategori</span>
 							<span class="text-muted">Tanggal</span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-xxl-3">
+			<div class="col-md-4 col-lg-4 col-xl-3 col-xxl-3">
 				<div class="card">
 					<div class="card-body">
 						<p class="card-text">Sidebar</p>
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><!-- /#posts -->
+
 		<div class="card mb-3">
 			<div class="card-body">
 				<p class="card-text">Social approve</p>
