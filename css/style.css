@@ -1,0 +1,9 @@
+.breadcrumb-scroller {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.breadcrumb-scroller > .breadcrumb-item::before {
+  float: none;
+}
