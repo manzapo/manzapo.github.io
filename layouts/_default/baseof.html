@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ if .Page.Description }}
+			<meta name="description" content="{{ .Page.Description }}">
+		{{ else }}
+			<meta name="description" content="{{ .Site.Params.Description }}">
+		{{ end }}
+		
+		{{ if .Page.Title }}
+			<title>{{ .Page.Title }} &middot; {{ .Site.Title }}</title>
+		{{ else }}
+			<title>{{ .Site.Title }}</title>
+		{{ end }}
+
+		<link rel="stylesheet" type="text/css" href="{{ "css/bootstrap.min.css" | absURL }}">
+		{{ block "stylesheet" . }}
+			<!-- custom css -->
+		{{ end }}
+
+	</head>
+	<body>
+		{{ block "navbar" . }}
+			{{ partial "navbar.html" . }}
+		{{ end }}
+
+		{{ block "main" . }}
+			<!-- The part of the page that begins to differ between templates -->
+		{{ end }}
+
+		{{ block "footer" . }}
+			{{ partial "footer.html" . }}
+		{{ end }}
+
+		<script src="{{ "js/bootstrap.bundle.min.js" | absURL }}"></script>
+		{{ block "javascript" . }}
+			<!-- custom script -->
+		{{ end }}
+	</body>
+</html>

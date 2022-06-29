@@ -1,0 +1,69 @@
+{{ define "main" }}
+	<div class="container">
+		<div class="mt-xxl-4" id="carousel">
+			<img src="holder.js/1296x432">
+		</div>
+
+		<div class="row justify-content-center my-xxl-5" id="hero">
+			<div class="col-xxl-6 text-xxl-center">
+				<h2 class="fw-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</h2>
+			</div>
+		</div>
+
+		<div class="row mb-xxl-5" id="features">
+			<div class="col-xxl-4">
+				<div class="card bg-light">
+					<div class="card-body">
+						<p class="card-text">Featured title</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xxl-4">
+				<div class="card bg-light">
+					<div class="card-body">
+						<p class="card-text">Featured title</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xxl-4">
+				<div class="card bg-light">
+					<div class="card-body">
+						<p class="card-text">Featured title</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row mb-xxl-5">
+			<div class="col-xxl-9">
+				<div class="d-flex align-items-center">
+					<h2 class="flex-grow-1">Unggahan terkini</h2>
+					<a href="#" class="btn btn-outline-success btn-sm">Lainnya</a>
+				</div>
+			</div>
+			<div class="col-xxl-9">
+				<div class="card">
+					<div class="card-body">
+						<p class="card-text">Posts</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-xxl-3">
+				<div class="card">
+					<div class="card-body">
+						<p class="card-text">Sidebar</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="card mb-3">
+			<div class="card-body">
+				<p class="card-text">Social approve</p>
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+	<script type="text/javascript" src="{{ "js/holder.min.js" | absURL }}"></script>
+{{ end }}
