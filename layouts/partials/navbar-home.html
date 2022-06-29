@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white mb-3 mb-lg-0 mt-lg-2 mt-xl-1 mt-xxl-3">
+<nav class="navbar navbar-expand-lg bg-white border-bottom">
 	<div class="container-lg">
 		<span class="navbar-brand">KOLEKTIF</span>
 		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -7,12 +7,12 @@
 		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 			<div class="offcanvas-header">
 				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Keterampilan</h5>
-				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
 			<div class="offcanvas-body">
-				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				<ul class="navbar-nav justify-content-end flex-grow-1">
 					{{ range where (where .Site.Pages "Section" "keterampilan").ByTitle "Params.slug" "ne" "keterampilan" }}
-						<li class="nav-item mx-lg-1"><a href="{{ .Permalink }}" class="nav-link">{{ .Title }}</a></li>
+						<li class="nav-item"><a href="{{ .Permalink }}" class="nav-link">{{ .Title }}</a></li>
 					{{ end }}
 				</ul>
 			</div>
