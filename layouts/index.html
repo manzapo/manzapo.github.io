@@ -118,22 +118,22 @@
 				</div>
 			</div>
 			<div class="col-md-4 col-lg-4 col-xl-3 col-xxl-3">
-				<div class="card">
-					<img src="{{ "img/sidebar.svg" | absURL }}" class="card-img-top"> <!-- holder.js/304x456 -->
-					<div class="card-body">
-						<p class="card-text">Sidebar</p>
-					</div>
-				</div>
+				<a href="#">
+					<img src="{{ "2022-06/sidebar-ppdb.jpg" | absURL }}" class="img-fluid rounded-3 border shadow-sm">
+				</a>
 			</div>
 		</div><!-- /#posts -->
+	</div>
+{{ end }}
 
-		<div class="card my-3">
-			<div class="card-body d-sm-flex">
-				<div class="flex-grow-1 mb-2 mb-sm-0">Tetap Terhubung</div>
-				<a href="#" class="text-decoration-none" target="_blank">Twitter</a>
-				<a href="#" class="text-decoration-none ms-3" target="_blank">Instagram</a>
-				<a href="#" class="text-decoration-none ms-3" target="_blank">Youtube</a>
-			</div>
+{{ define "footer" }}
+	<div class="container mt-5">
+		<div class="d-sm-flex align-items-center border-top py-3 py-sm-2">
+			<div class="flex-sm-grow-1 ms-sm-3 text-secondary text-center text-sm-start">2021-2022 <strong>kolektif</strong>.my.id</div>
+			<nav class="nav justify-content-center justify-content-sm-start">
+				<a href="#" class="nav-link link-secondary"><i class="bi bi-instagram"></i> Instagram</a>
+				<a href="#" class="nav-link link-secondary"><i class="bi bi-youtube"></i> YouTube</a>
+			</nav>
 		</div>
 	</div>
 {{ end }}
