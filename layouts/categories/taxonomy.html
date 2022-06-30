@@ -1,0 +1,29 @@
+{{ define "navbar" }}
+  {{ partial "navbar.html" . }}
+  {{ partial "breadcrumb-categories-taxonomy.html" . }}
+{{ end }}
+{{ define "main" }}
+  <div class="container mt-3 mt-xl-5">
+    <div class="p-3 p-xl-5 mb-4 bg-light rounded-3">
+      <h1 class="display-5 fw-bold">{{ .Page.Title }}</h1>
+      <p class="col-md-8 fs-4">{{ .Page.Summary }}</p>      
+    </div>
+    <div class="row">
+      <div class="col-md-8 col-xl-9 mt-3 mb-3 mb-xl-5">
+        {{ range .Pages }}
+          {{ partial "excerpt.html" . }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+{{ define "javascript" }}
+<script type="text/javascript">
+  window.addEventListener('load', function () {
+    var tabActive = document.getElementById("nav-{{ .Page.Slug }}");
+    tabActive.classList.add("active");
+  });
+</script>
+<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+{{ end }}

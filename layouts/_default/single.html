@@ -1,0 +1,21 @@
+{{ define "navbar" }}
+	{{ partial "navbar.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<div class="container py-3 py-xxl-5">
+		<div class="bg-light p-3 p-xxl-5 py-xl-5 rounded-3 mb-3 mb-xxl-5">
+			<h1 class="fs-1">{{ .Page.Title }}</h1>
+			<p class="lead mb-0">{{ .Page.Description }}</p>
+		</div>
+		<div class="row">
+			<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-6"><!-- sm:516 md:516 lg:536 xl:546-636 xxl:526 -->
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+	<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+{{ end }}

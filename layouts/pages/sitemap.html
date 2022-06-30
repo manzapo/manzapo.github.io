@@ -1,0 +1,19 @@
+{{ define "main" }}
+	<div class="bg-warning bg-opacity-50 py-3 py-xl-5">
+		<div class="container">
+		 <h1>halaman sedang dalam pengembangan</h1>
+		</div>
+	</div>
+	<div class="container">
+		<div class="fw-bold fs-4 mt-3">Pembaruan</div>
+		<div class="list-group list-group-flush mb-3 mb-xl-5">
+			{{ range first 5 .Site.Pages }}
+				<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">{{.Title}}</a>
+			{{ end }}
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+	<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+{{ end }}

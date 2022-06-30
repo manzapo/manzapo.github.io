@@ -8,7 +8,6 @@
 
 {{ define "main" }}
 	<div class="container">
-
 		<div class="text-center my-5" id="hero">
 			<h1 class="display-1 fw-bold">Pustaka Digital</h1>
 			<h5 class="text-secondary fw-light">Secara kolektif mengarsipkan dan mengabarkan.</h5>
@@ -28,14 +27,11 @@
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
 				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
 			</button>
 			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-
 		
 		<div class="row row-cols-1 row-cols-lg-3 mb-5">
 			<div class="col d-flex align-items-start">
@@ -43,8 +39,8 @@
 					<i class="bi bi-toggles2"></i>
 				</div>
 				<div>
-					<h2>Featured title</h2>
-					<p class="text-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+					<h2>Pengumuman</h2>
+					<p class="text-secondary">Informasi resmi dari madrasah</p>
 					<a href="#" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Call to action<i class="bi bi-chevron-right"></i></a>
 				</div>
 			</div>
@@ -53,8 +49,8 @@
 					<i class="bi bi-cpu-fill"></i>
 				</div>
 				<div>
-					<h2>Featured title</h2>
-					<p class="text-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+					<h2>Dokumentasi</h2>
+					<p class="text-secondary">Arsip kegiatan di madrasah</p>
 					<a href="#" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Call to action<i class="bi bi-chevron-right"></i></a>
 				</div>
 			</div>
@@ -63,9 +59,9 @@
 					<i class="bi bi-tools"></i>
 				</div>
 				<div>
-					<h2>Featured title</h2>
-					<p class="text-secondary">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-					<a href="#" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Call to action<i class="bi bi-chevron-right"></i></a>
+					<h2>Pustaka</h2>
+					<p class="text-secondary">Referensi belajar mandiri</p>
+					<a href="#series" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Call to action<i class="bi bi-chevron-right"></i></a>
 				</div>
 			</div>
 		</div>
@@ -78,7 +74,9 @@
 						<p class="h5 mb-0">Terbaru</p>
 						<small class="text-secondary">Unggahan terkini</small>
 					</div>
-					<a href="#" class="btn btn-outline-success rounded-1">Lainnya</a>
+					{{ with .Site.GetPage "/content/posts/_index.md" }}
+						<a href="{{ .Permalink }}" class="btn btn-outline-success rounded-1">Lainnya</a>
+					{{ end }}
 				</div>
 			</div>
 			<div class="col-md-8 col-xl-9 mb-xxl-4">
@@ -121,7 +119,7 @@
 			</div>
 			<div class="col-md-4 col-lg-4 col-xl-3 col-xxl-3">
 				<div class="card">
-					<img src="holder.js/304x456" class="card-img-top">
+					<img src="{{ "img/sidebar.svg" | absURL }}" class="card-img-top"> <!-- holder.js/304x456 -->
 					<div class="card-body">
 						<p class="card-text">Sidebar</p>
 					</div>
@@ -129,9 +127,12 @@
 			</div>
 		</div><!-- /#posts -->
 
-		<div class="card mb-3">
-			<div class="card-body">
-				<p class="card-text">Social approve</p>
+		<div class="card my-3">
+			<div class="card-body d-sm-flex">
+				<div class="flex-grow-1 mb-2 mb-sm-0">Tetap Terhubung</div>
+				<a href="#" class="text-decoration-none" target="_blank">Twitter</a>
+				<a href="#" class="text-decoration-none ms-3" target="_blank">Instagram</a>
+				<a href="#" class="text-decoration-none ms-3" target="_blank">Youtube</a>
 			</div>
 		</div>
 	</div>

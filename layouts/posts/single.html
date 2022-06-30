@@ -1,0 +1,19 @@
+{{ define "navbar" }}
+	{{ partial "navbar.html" . }}
+	{{ partial "breadcrumb-posts-single.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<div class="container">
+		<div class="row mb-xl-5">
+			<div class="col-md-8 col-xl-9 mt-3 mt-xl-0 mt-3" id="content">
+				<h1 class="h3 mb-3 my-xl-4">{{ .Title }}</h1>
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+{{ end }}

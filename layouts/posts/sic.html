@@ -1,0 +1,150 @@
+{{ define "navbar" }}
+	{{ partial "navbar.html" . }}
+	{{ partial "breadcrumb-posts-single.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<!-- https://github.com/jamiewilson/form-to-google-sheets -->
+	<div class="container">
+		<h1 class="h3 mt-3 mt-xl-4">{{ .Title }}</h1>
+		<div class="row">
+			<div class="col-md-6 col-lg-8 col-xl-7 order-2 order-md-1 mt-3 mt-xl-3" id="content">
+				{{ .Content }}
+			</div>
+			<div class="col-md-6 col-lg-4 col-xl-4 offset-xl-1 order-1 order-md-2 mt-xl-1">
+				<div class="py-3"><!-- sticky-top -->
+					<div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+						<strong>Terimakasih</strong> Pendaftaran Berhasil
+						<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+					</div>
+					<div class="card">
+						<div class="card-header fw-bold lead">Form Pendaftaran Internal</div>
+						<div class="accordion accordion-flush" id="accordionFlushExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+										Pendaftaran Individu
+									</button>
+								</h2>
+								<div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="bg-success bg-opacity-25 p-3">Pendaftar akan dibuatkan tim dengan sesama pendaftar individu lainnya</div>
+									<div class="accordion-body">
+										<form name="submit-to-google-sheet">
+											<div class="form-floating mb-3">
+												<input type="text" name="nama" class="form-control" id="inputTelepon" placeholder="Nama Lengkap" required="required">
+												<label for="inputTelepon">Nama Lengkap</label>
+											</div>
+											<div class="form-floating mb-3">
+												<input type="text" name="telepon" class="form-control" id="inputWhatsapp" placeholder="Nomor Telepon">
+												<label for="inputWhatsapp">Nomor Telepon</label>
+											</div>
+											<button type="submit" class="btn btn-success btn-daftar px-3">Daftar</button>
+											<button class="btn btn-success btn-loading d-none" disabled>
+												<span class="spinner-border spinner-border-sm"></span> Loading...
+											</button>
+										</form>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+										Pendaftaran Kelompok
+									</button>
+								</h2>
+								<div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+									<div class="bg-success bg-opacity-25 p-3">Satu tim beranggotakan 4 siswa</div>
+									<div class="accordion-body">
+										<form name="pendaftaran-kelompok">
+											<div class="mb-3 mb-xl-4">
+												<label for="inputPeserta1" class="form-label">Peserta 1</label>
+												<input type="text" name="nama1" class="form-control mb-1" id="inputPeserta1" placeholder="Nama Lengkap Peserta 1" required>
+												<input type="text" name="telepon1" class="form-control" placeholder="Nomor Telepon Peserta 1">
+											</div>
+											<div class="mb-3 mb-xl-4">
+												<label for="inputPeserta2" class="form-label">Peserta 2</label>
+												<input type="text" name="nama2" class="form-control mb-1" id="inputPeserta2" placeholder="Nama Lengkap Peserta 2" required>
+												<input type="text" name="telepon2" class="form-control" placeholder="Nomor Telepon Peserta 2">
+											</div>
+											<div class="mb-3 mb-xl-4">
+												<label for="inputPeserta3" class="form-label">Peserta 3</label>
+												<input type="text" name="nama3" class="form-control mb-1" id="inputPeserta3" placeholder="Nama Lengkap Peserta 3" required>
+												<input type="text" name="telepon3" class="form-control" placeholder="Nomor Telepon Peserta 3">
+											</div>
+											<div class="mb-3 mb-xl-4">
+												<label for="inputPeserta4" class="form-label">Peserta 4</label>
+												<input type="text" name="nama4" class="form-control mb-1" id="inputPeserta4" placeholder="Nama Lengkap Peserta 4" required>
+												<input type="text" name="telepon4" class="form-control" placeholder="Nomor Telepon Peserta 4">
+											</div>
+											<button type="submit" class="btn btn-success mb-xl-2 px-3 btn-daftar2">Daftar</button>
+											<button class="btn btn-success btn-loading2 d-none" disabled>
+												<span class="spinner-border spinner-border-sm"></span> Loading...
+											</button>
+										</form>
+										<div class="alert alert-success alert-dismissible fade show d-none my-alert2" role="alert">
+											<strong>Terimakasih</strong>
+											<p class="mb-0">Pendaftaran kelompok berhasil</p>
+											<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{{ end }}
+
+{{ define "javascript" }}
+	<script type="text/javascript">
+		const scriptURL  = 'https://script.google.com/macros/s/AKfycbzV9SPAO1J05Yc1kIUcxAgJRRAuNpMFDNfSP0bw_kkrC4xPqK6lrx7FYOjyCQNwiS71/exec'
+		const form       = document.forms['submit-to-google-sheet']
+		const btnDaftar  = document.querySelector('.btn-daftar')
+		const btnLoading = document.querySelector('.btn-loading')
+		const myAlert    = document.querySelector('.my-alert')
+
+		// kelompok
+		const scriptURL2  = 'https://script.google.com/macros/s/AKfycbyM1f5Ri84xM5R0i5uTBZ21-rp8L7Cl9nNwDCaO4rbvR_DQXW-CwmhzpVt-lLzv2sULPw/exec'
+		const form2       = document.forms['pendaftaran-kelompok']
+		const btnDaftar2  = document.querySelector('.btn-daftar2')
+		const btnLoading2 = document.querySelector('.btn-loading2')
+		const myAlert2    = document.querySelector('.my-alert2')
+
+		form.addEventListener('submit', e => {
+			e.preventDefault()
+			
+			btnDaftar.classList.toggle('d-none')
+			btnLoading.classList.toggle('d-none')
+			
+			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+				.then(response => {
+					btnDaftar.classList.toggle('d-none')
+					btnLoading.classList.toggle('d-none')
+					myAlert.classList.toggle('d-none')
+					form.reset()
+					console.log('Success!', response)
+				})
+				.catch(error => console.error('Error!', error.message))
+		})
+
+		form2.addEventListener('submit', e => {
+			e.preventDefault()
+			
+			btnDaftar2.classList.toggle('d-none')
+			btnLoading2.classList.toggle('d-none')
+			
+			fetch(scriptURL2, { method: 'POST', body: new FormData(form2)})
+				.then(response => {
+					btnDaftar2.classList.toggle('d-none')
+					btnLoading2.classList.toggle('d-none')
+					myAlert2.classList.toggle('d-none')
+					form2.reset()
+					console.log('Success!', response)
+				})
+				.catch(error => console.error('Error!', error.message))
+		})
+	</script>
+
+{{ end }}

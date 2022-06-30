@@ -1,0 +1,27 @@
+{{ define "navbar" }}
+	{{ partial "navbar.html" . }}
+{{ end }}
+{{ define "main" }}
+	<div class="bg-light border-bottom mb-3 mb-xl-5">
+		<div class="container text-center py-5">
+			<h1 class="display-5 fw-bold mb-5 my-xl-5">{{ .Title }}</h1>
+			<div class="d-flex flex-column flex-md-row justify-content-md-center">
+				<div class="text-muted py-md-2">{{ .Page.Date.Format "2 January 2006" }}</div>
+				<ul class="nav flex-column flex-md-row">
+					{{ range (.GetTerms "categories") }}
+						<li class="nav-item">
+							<a href="{{ .Permalink }}" class="nav-link">{{ .Title }}</a>
+						</li>
+					{{ end }}
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container mb-5">
+		<div class="row justify-content-md-center">
+			<div class="col-md-9 col-lg-7 col-xl-6 col-xxl-6"><!-- sm:516 md:516 lg:536 xl:546-636 xxl:526 -->
+				{{ .Content }}
+			</div>
+		</div>
+	</div>
+{{ end }}
