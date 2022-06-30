@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on manzapo.github.io</title>
+    <link>https://manzapo.github.io/pages/</link>
+    <description>Recent content in Pages on manzapo.github.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 22 Dec 2021 00:14:19 +0700</lastBuildDate><atom:link href="https://manzapo.github.io/pages/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Peta Situs</title>
+      <link>https://manzapo.github.io/sitemap/</link>
+      <pubDate>Wed, 22 Dec 2021 00:14:19 +0700</pubDate>
+      
+      <guid>https://manzapo.github.io/sitemap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redaksi</title>
+      <link>https://manzapo.github.io/about/</link>
+      <pubDate>Tue, 21 Dec 2021 22:25:52 +0700</pubDate>
+      
+      <guid>https://manzapo.github.io/about/</guid>
+      <description>Laman ini dikembangkan secara tidak resmi oleh civitas akademika sebagai jawaban tidak semua informasi bisa disampaikan pada laman resmi lembaga, meski demikian informasi yang disampaikan disini berasal dari sumber kredibel.
+Sapa kami di sosial media
+Meja Ketik </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Beranda on manzapo.github.io</title>
-    <link>https://manzapo.github.io/</link>
-    <description>Recent content in Beranda on manzapo.github.io</description>
+    <title>Unggahan on manzapo.github.io</title>
+    <link>https://manzapo.github.io/posts/</link>
+    <description>Recent content in Unggahan on manzapo.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 29 Jun 2022 10:19:32 +0700</lastBuildDate><atom:link href="https://manzapo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Dec 2021 23:31:19 +0700</lastBuildDate><atom:link href="https://manzapo.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Petunjuk Teknis Penulisan Blangko Ijazah Madrasah Tahun Pelajaran 2021/2022</title>
       <link>https://manzapo.github.io/post/juknis-penulisan-ijazah-2022/</link>
@@ -14,26 +14,6 @@
       <guid>https://manzapo.github.io/post/juknis-penulisan-ijazah-2022/</guid>
       <description> Subdirektorat Kurikulum dan Evaluasi Direktorat KSKK Madrasah Direktorat Jenderal Pendidikan Islam Kementerian Agama RI 2022
 Unduh berkas </description>
-    </item>
-    
-    <item>
-      <title>Teknik Pengambilan Gambar</title>
-      <link>https://manzapo.github.io/series/premiere/teknik-pengambilan-gambar/</link>
-      <pubDate>Wed, 13 Apr 2022 04:49:30 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/series/premiere/teknik-pengambilan-gambar/</guid>
-      <description> Download slide </description>
-    </item>
-    
-    <item>
-      <title>Pendaftaran Wisuda Prodistik VIII</title>
-      <link>https://manzapo.github.io/series/tugas-akhir/pendaftaran-wisuda-viii/</link>
-      <pubDate>Mon, 04 Apr 2022 19:07:00 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/series/tugas-akhir/pendaftaran-wisuda-viii/</guid>
-      <description>Assalamu&amp;rsquo;alaikum Wr. Wb
-Diberitahukan kepada Siswa-siswi prodistik angkatan ke VIII kelas XII tahun pelajaran 2021-2022 untuk mendaftar wisuda Prodistik angkatan ke VIII dengan ketentuan sebagai berikut :
-Mengumpulkan Laporan Tugas Akhir dan Bentuk buku Mengumpulkan file dalam CD atau di upload di form pendaftaran berisi : Laporan Tugas Akhir (format docx dan pdf) File Produk File presentasi (Powerpoint) Mengumpulkan Produk hasil Revisi Mendaftarkan diri ke bagian administrasi (Mas Alwy) Mendaftarkan secara online di sini Data siswa yang sudah mendaftar Wisuda dapat diakses klik disini</description>
     </item>
     
     <item>
@@ -54,27 +34,6 @@ Surat Pemberitahuan Libur Permulaan Puasa dan Pondok Ramadhan Jadwal Pondok Rama
       <guid>https://manzapo.github.io/post/ujian-praktek-2022/</guid>
       <description>Sehubungan dengan pelaksanaan Ujian Praktek Keterampilan Tahun Ajaran 2021/2022, maka disampaikan ketentuan sebagai berikut
 Ujian Praktek Keterampilan diperuntukkan siswa kelas XII - MAN 1 Ponorogo tahun Ajaran 2021/2022 untuk Program Keterampilan Multimedia, Desain Grafika, Animasi, Rekayasa Perangkat Lunak, Tata Boga, dan Tata Busana. Bagi siswa yang telah mengikuti Ujian Tugas Akhir PRODISTIK, tidak Perlu mengikuti Ujian Praktek Keterampilan (Ujian Praktek Keterampilan wajib diikuti oleh siwa-siswa yang belum menempuh ujian Tugas Akhir Prodistik).</description>
-    </item>
-    
-    <item>
-      <title>Tahapan Ujian Tugas Akhir</title>
-      <link>https://manzapo.github.io/series/tugas-akhir/tahapan-ujian-ta/</link>
-      <pubDate>Fri, 11 Feb 2022 18:37:23 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/series/tugas-akhir/tahapan-ujian-ta/</guid>
-      <description>Tahapan Ujian Tugas Akhir Tugas Akhir Prodistik adalah kewajiban yang harus ditempuh siswa MAN 1 Ponorogo sebagai prasyarat mendapat sertifikat program keterampilan dari Prodistik ITS. Selain itu kegiatan ini juga sebagai sarana belajar menulis karya ilmiah dengan pendampingan dari guru pendamping yang telah ditunjuk oleh madrasah. Adapun tahapan penyusunan tugas akhir adalah sebagai berikut
-DAFTAR ISI
-A. Tahapan mengerjakan Tugas Akhir B. Dokumen yang perlu disiapkan saat presentasi Ujian Akhir 1.</description>
-    </item>
-    
-    <item>
-      <title>Struktur Dasar HTML</title>
-      <link>https://manzapo.github.io/series/html/struktur-dasar/</link>
-      <pubDate>Sat, 05 Feb 2022 15:50:21 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/series/html/struktur-dasar/</guid>
-      <description>HTML (Hypertext Markup Language) adalah bahasa pemrograman yang digunakan untuk membuat halaman web. Struktur dasarnya seperti contoh code berikut
-&amp;lt;html&amp;gt; &amp;lt;!-- awal dokumen html --&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- element pendukung dokumen disimpan dalam head --&amp;gt; &amp;lt;title&amp;gt;Judul Laman&amp;lt;/title&amp;gt; &amp;lt;!-- judul halaman --&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;!-- Konten untuk ditampilkan ditulis disini (dalam body) --&amp;gt; Hello World! &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Kode bahasa pemrograman HTML ditulis dengan teks editor. Sebagai permulaan silakan salin kode di atas, masukkan dalam dokumen teks, dan simpan dalam format html (nama file: index.</description>
     </item>
     
     <item>
@@ -118,18 +77,6 @@ Hingga pendaftaran program Samsung Innovation Campus - Batch 3 ini di tutup, ter
     </item>
     
     <item>
-      <title>Sampul Laporan Tugas Akhir</title>
-      <link>https://manzapo.github.io/series/tugas-akhir/sampul-laporan/</link>
-      <pubDate>Tue, 18 Jan 2022 14:11:42 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/series/tugas-akhir/sampul-laporan/</guid>
-      <description>Setelah diuji dan dinyatakan selesai revisi, maka selanjutnya peserta mencetak draft Laporan Tugas Akhir kedalam bentuk buku sejumlah 2 eksemplar.
-Referensi Sampul Kreasi (.cdr)
-Sampul Prodistik Sudah sesuai dengan template
-Sampul Depan (biru putih) Sampul Dalam Lembar Persetujuan Lembar Pengesahan Kata Pengantar Daftar Isi Daftar Tabel (opsional) Daftar Gambar (opsional) Bab I Bab II Bab III Daftar Pustaka Biografi Penulis Sampul Kreasi Memberikan kesempatan berkreasi mendesain sebuah buku yang menarik</description>
-    </item>
-    
-    <item>
       <title>Tugas Akhir 2021/2022</title>
       <link>https://manzapo.github.io/post/tugas-akhir-2122/</link>
       <pubDate>Wed, 12 Jan 2022 20:15:35 +0700</pubDate>
@@ -147,87 +94,6 @@ Sampul Depan (biru putih) Sampul Dalam Lembar Persetujuan Lembar Pengesahan Kata
   &lt;/div&gt;
 &lt;/div&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Template Laporan</title>
-      <link>https://manzapo.github.io/series/tugas-akhir/template-laporan/</link>
-      <pubDate>Wed, 12 Jan 2022 20:12:04 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/series/tugas-akhir/template-laporan/</guid>
-      <description> Pengumuman Ujian Tugas Akhir Tahun Ajaran 2021/2022 Template Laporan Tugas Akhir versi 1 Template Laporan Tugas Akhir versi 2.2 Formulir Pendaftaran Ujian Tugas Akhir </description>
-    </item>
-    
-    <item>
-      <title>eBook PhotoShop</title>
-      <link>https://manzapo.github.io/series/photoshop/ebook-photoshop/</link>
-      <pubDate>Thu, 06 Jan 2022 16:33:35 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/series/photoshop/ebook-photoshop/</guid>
-      <description>Pengenalan Photoshop.pdf</description>
-    </item>
-    
-    <item>
-      <title>Tata Busana</title>
-      <link>https://manzapo.github.io/keterampilan/tata-busana/</link>
-      <pubDate>Mon, 03 Jan 2022 22:13:37 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/keterampilan/tata-busana/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Tata Boga</title>
-      <link>https://manzapo.github.io/keterampilan/tata-boga/</link>
-      <pubDate>Mon, 03 Jan 2022 22:11:55 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/keterampilan/tata-boga/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rekayasa Perangkat Lunak</title>
-      <link>https://manzapo.github.io/keterampilan/rekayasa-perangkat-lunak/</link>
-      <pubDate>Mon, 03 Jan 2022 22:09:18 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/keterampilan/rekayasa-perangkat-lunak/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Multimedia</title>
-      <link>https://manzapo.github.io/keterampilan/multimedia/</link>
-      <pubDate>Mon, 03 Jan 2022 22:08:15 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/keterampilan/multimedia/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Desain Grafis</title>
-      <link>https://manzapo.github.io/keterampilan/desain-grafis/</link>
-      <pubDate>Mon, 03 Jan 2022 22:05:21 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/keterampilan/desain-grafis/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Animasi</title>
-      <link>https://manzapo.github.io/keterampilan/animasi/</link>
-      <pubDate>Mon, 03 Jan 2022 21:59:40 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/keterampilan/animasi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pengantar</title>
-      <link>https://manzapo.github.io/series/animate/pengantar/</link>
-      <pubDate>Mon, 03 Jan 2022 19:54:17 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/series/animate/pengantar/</guid>
-      <description>Materi tentang Animasi dan Adobe Animate</description>
     </item>
     
     <item>
@@ -265,26 +131,6 @@ Sampul Depan (biru putih) Sampul Dalam Lembar Persetujuan Lembar Pengesahan Kata
       
       <guid>https://manzapo.github.io/post/samsung-innovation-campus/</guid>
       <description>Program kolaborasi Samsung Electronics Indonesia dan Skilvul untuk meningkatkan kemampuan coding dan menghasilkan talenta digital siap kerja yang mengadopsi teknologi terbaru demi menjawab kebutuhan industri.</description>
-    </item>
-    
-    <item>
-      <title>Peta Situs</title>
-      <link>https://manzapo.github.io/sitemap/</link>
-      <pubDate>Wed, 22 Dec 2021 00:14:19 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/sitemap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Redaksi</title>
-      <link>https://manzapo.github.io/about/</link>
-      <pubDate>Tue, 21 Dec 2021 22:25:52 +0700</pubDate>
-      
-      <guid>https://manzapo.github.io/about/</guid>
-      <description>Laman ini dikembangkan secara tidak resmi oleh civitas akademika sebagai jawaban tidak semua informasi bisa disampaikan pada laman resmi lembaga, meski demikian informasi yang disampaikan disini berasal dari sumber kredibel.
-Sapa kami di sosial media
-Meja Ketik </description>
     </item>
     
     <item>
