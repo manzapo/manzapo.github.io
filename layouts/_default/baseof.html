@@ -17,9 +17,9 @@
 		{{ end }}
 
 		<link rel="icon" href="{{ "favicon.ico" | absURL }}">
-		<link rel="stylesheet" type="text/css" href="{{ "css/bootstrap.min.css" | absURL }}">
-		<link rel="stylesheet" type="text/css" href="{{ "css/roboto-flex.css" | absURL }}">
-		<link rel="stylesheet" type="text/css" href="{{ "css/style.css" | absURL }}">
+		<link rel="stylesheet" type="text/css" href="{{ "assets/css/bootstrap.min.css" | absURL }}">
+		<link rel="stylesheet" type="text/css" href="{{ "assets/css/roboto-flex.css" | absURL }}">
+		<link rel="stylesheet" type="text/css" href="{{ "assets/css/style.css" | absURL }}">
 		{{ block "stylesheet" . }}
 			<!-- custom css -->
 		{{ end }}
@@ -38,7 +38,7 @@
 			{{ partial "footer.html" . }}
 		{{ end }}
 
-		<script src="{{ "js/bootstrap.bundle.min.js" | absURL }}"></script>
+		<script src="{{ "assets/js/bootstrap.bundle.min.js" | absURL }}"></script>
 		{{ block "javascript" . }}
 			<!-- custom script -->
 		{{ end }}

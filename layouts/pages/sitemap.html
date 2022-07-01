@@ -8,9 +8,22 @@
 		<div class="fw-bold fs-4 mt-3">Pembaruan</div>
 		<div class="list-group list-group-flush mb-3 mb-xl-5">
 			{{ range first 5 .Site.Pages }}
-				<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">{{.Title}}</a>
+				<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">{{ .Title }}</a>
 			{{ end }}
 		</div>
+		<div class="fw-bold fs-4 mt-3">Keterampilan</div>
+		<div class="list-group list-group-flush mb-3 mb-xl-5">
+			{{ range where (where .Site.Pages "Section" "keterampilan").ByTitle "Params.slug" "ne" "keterampilan" }}
+				<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">{{ .Title }}</a>
+			{{ end }}
+		</div>
+		<div class="fw-bold fs-4 mt-3">Kategori</div>
+		<div class="list-group list-group-flush mb-3 mb-xl-5">
+			{{ range .Site.Taxonomies.categories }}
+				<a href="{{ .Page.Permalink }}" class="list-group-item list-group-item-action">{{ .Page.Title }}</a>
+			{{ end }}
+		</div>
+		<div class="fw-bold fs-4 mt-3">Series</div>
 	</div>
 {{ end }}
 

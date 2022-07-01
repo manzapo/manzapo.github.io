@@ -1,10 +1,14 @@
 {{ define "main" }}
+	<div class="bg-light py-5 mb-5">
+		<div class="container">
+			<h1 class="fw-bold">{{ .Page.Title }}</h1><!-- mt-3 mt-xl-5 -->
+			<p class="text-primary fw-bold">/posts/</p>
+			<p class="mb-0">{{ .Page.Description }}</p>
+		</div>
+	</div>
 	<div class="container">
-		<h1 class="fw-bold mt-3 mt-xl-5">{{ .Page.Title }}</h1>
-		<p class="text-primary fw-bold">/posts/</p>
-		<p>{{ .Page.Description }}</p>
 		<div class="row">
-			<div class="col-md-8 col-xl-9 mt-3 mb-3 mb-xl-5">
+			<div class="col-md-8 col-xl-9"><!-- mt-3 mb-3 mb-xl-5 -->
 				{{ range (.Paginator 5).Pages }}
 					{{ partial "excerpt.html" . }}
 				{{ end }}
