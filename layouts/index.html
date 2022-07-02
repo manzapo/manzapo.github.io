@@ -74,52 +74,51 @@
 						<small class="text-black-50">Unggahan terkini</small>
 					</div>
 					{{ with .Site.GetPage "/content/posts/_index.md" }}
-						<a href="{{ .Permalink }}" class="btn btn-outline-success rounded-1">Lainnya</a>
+						<a href="{{ .Permalink }}" class="btn btn-outline-success rounded-1">Lihat semua</a>
 					{{ end }}
 				</div>
 			</div>
 			<div class="col-md-8 col-xl-9 mb-xxl-4">
+
 				{{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Type" "posts") }}
+
 					{{ partial "excerpt.html" . }}
+
 				{{ end }}
-				
-				<hr>
-				<div class="row justify-content-sm-center justify-content-xl-start align-items-lg-center mb-4">
-					<div class="col-sm-11 col-md-12 col-lg-6 mb-2">
-						<img src="{{ "assets/img/home-thumb.jpg" | absURL }}" class="img-fluid"><!-- holder.js/482x241 -->
-					</div>
-					<div class="col-sm-11 col-md-12 col-lg-6 col-xl-5">
-						<a href="#" class="text-decoration-none link-dark h5">This is some content from a media component. You can replace this with any content and adjust it as needed</a>
-						<div class="small mt-2 mt-xxl-3">
-							<span class="text-dark pe-2">Kategori</span>
-							<span class="text-muted">Tanggal</span>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-sm-center justify-content-xl-start align-items-lg-center mb-4">
-					<div class="col-sm-11 col-md-12 col-lg-6 mb-2">
-						<img src="{{ "assets/img/home-thumb.jpg" | absURL }}" class="img-fluid"><!-- holder.js/482x241 -->
-					</div>
-					<div class="col-sm-11 col-md-12 col-lg-6 col-xl-5">
-						<a href="#" class="text-decoration-none link-dark h5">This is some content from a media component. You can replace this with any content and adjust it as needed</a>
-						<div class="small mt-2 mt-xxl-3">
-							<span class="text-dark pe-2">Kategori</span>
-							<span class="text-muted">Tanggal</span>
-						</div>
-					</div>
-				</div>
+
 			</div>
 			<div class="col-md-4 col-lg-4 col-xl-3 col-xxl-3">
-				<a href="#">
-					<img src="{{ "assets/2022-06/sidebar-ppdb.jpg" | absURL }}" class="img-fluid rounded-3 border shadow-sm">
-				</a>
+				<div class="alert alert-success alert-dismissible fade show">
+					<strong>Terimakasih atas kunjungannya</strong>
+					<p class="mb-0">Laman sedang dalam tahap pengembangan.</p>
+					<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+				</div>
 			</div>
 		</div><!-- /#posts -->
+
+		<div class="border bg-success bg-opacity-10 p-3">
+			<div class="d-sm-flex align-items-sm-center border-bottom border-success mb-2 pb-2 pb-sm-0">
+				<h5 class="flex-sm-grow-1">Kategori</h5>
+				{{ with .Site.GetPage "/content/categories/_index.md" }}
+					<a href="{{ .Permalink }}" class="link-success text-decoration-none">Lihat semua</a>
+				{{ end }}
+			</div>
+
+			<div class="row row-cols-1 row-cols-sm-3">
+				{{ range .Site.Taxonomies.categories }}
+					<div class="col">
+						<a href="{{ .Page.Permalink }}" class="lead link-dark text-decoration-none fw-bold">{{ .Page.Title }}</a>
+						<p class="mb-sm-0 text-black-50">{{ .Page.Params.description }}</p>
+					</div>
+				{{ end }}
+			</div>
+		</div>
+		
 	</div>
 {{ end }}
 
 {{ define "footer" }}
-	<div class="container mt-5">
+	<div class="container">
 		<div class="d-sm-flex align-items-center border-top py-3 py-sm-2">
 			<div class="flex-sm-grow-1 ms-sm-3 text-secondary text-center text-sm-start">2021-2022 <strong>kolektif</strong>.my.id</div>
 			<nav class="nav justify-content-center justify-content-sm-start">
