@@ -2,15 +2,16 @@
 	{{ .Summary }}
 {{ else }}
 	{{ if .Params.thumbnail }}
-		<div class="row mt-4 mb-5">
-			<div class="col-lg-5 col-xxl-4">
-				<img src="/assets/{{ .Params.thumbnail }}" class="img-fluid">
+		<div class="row justify-content-sm-center justify-content-xl-start align-items-lg-center mb-4">
+			<div class="col-sm-11 col-md-12 col-lg-6 mb-2">
+				<img src="/assets/{{ .Params.thumbnail }}" class="img-fluid"><!-- holder.js/482x241 -->
 			</div>
-			<div class="col-lg-7 col-xxl-8 align-self-xl-center mt-3 mt-lg-0">
-				<a href="{{ .Permalink }}" class="text-decoration-none link-dark">
-					<h4>{{ .Title }}</h4>
-				</a>
-				<p class="text-black-50 mb-0">{{ .Description }}</p>
+			<div class="col-sm-11 col-md-12 col-lg-6 col-xl-5">
+				<a href="{{ .Permalink }}" class="text-decoration-none link-dark h5">{{ .Title }}</a>
+				<div class="small mt-2 mt-xxl-3">
+					{{ range (.GetTerms "categories") }}<a href="{{ .Permalink }}" class="link-success pe-2 text-decoration-none">{{ .Title }}</a> {{ end }}
+					<span class="text-black-50">{{ .Page.Date.Format "2 January, 2006" }}</span>
+				</div>
 			</div>
 		</div>
 

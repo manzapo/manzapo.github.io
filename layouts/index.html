@@ -71,7 +71,7 @@
 				<div class="d-flex align-items-center border-bottom">
 					<div class="flex-column mb-2 flex-grow-1">
 						<p class="h5 mb-0">Terbaru</p>
-						<small class="text-secondary">Unggahan terkini</small>
+						<small class="text-black-50">Unggahan terkini</small>
 					</div>
 					{{ with .Site.GetPage "/content/posts/_index.md" }}
 						<a href="{{ .Permalink }}" class="btn btn-outline-success rounded-1">Lainnya</a>
@@ -79,11 +79,16 @@
 				</div>
 			</div>
 			<div class="col-md-8 col-xl-9 mb-xxl-4">
-				<div class="row justify-content-sm-center justify-content-xxl-start align-items-lg-center mb-4">
+				{{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Type" "posts") }}
+					{{ partial "excerpt.html" . }}
+				{{ end }}
+				
+				<hr>
+				<div class="row justify-content-sm-center justify-content-xl-start align-items-lg-center mb-4">
 					<div class="col-sm-11 col-md-12 col-lg-6 mb-2">
 						<img src="{{ "assets/img/home-thumb.jpg" | absURL }}" class="img-fluid"><!-- holder.js/482x241 -->
 					</div>
-					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-5">
+					<div class="col-sm-11 col-md-12 col-lg-6 col-xl-5">
 						<a href="#" class="text-decoration-none link-dark h5">This is some content from a media component. You can replace this with any content and adjust it as needed</a>
 						<div class="small mt-2 mt-xxl-3">
 							<span class="text-dark pe-2">Kategori</span>
@@ -91,23 +96,11 @@
 						</div>
 					</div>
 				</div>
-				<div class="row justify-content-sm-center justify-content-xxl-start align-items-lg-center mb-4">
+				<div class="row justify-content-sm-center justify-content-xl-start align-items-lg-center mb-4">
 					<div class="col-sm-11 col-md-12 col-lg-6 mb-2">
 						<img src="{{ "assets/img/home-thumb.jpg" | absURL }}" class="img-fluid"><!-- holder.js/482x241 -->
 					</div>
-					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-5">
-						<a href="#" class="text-decoration-none link-dark h5">This is some content from a media component. You can replace this with any content and adjust it as needed</a>
-						<div class="small mt-2 mt-xxl-3">
-							<span class="text-dark pe-2">Kategori</span>
-							<span class="text-muted">Tanggal</span>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-sm-center justify-content-xxl-start align-items-lg-center mb-4">
-					<div class="col-sm-11 col-md-12 col-lg-6 mb-2">
-						<img src="{{ "assets/img/home-thumb.jpg" | absURL }}" class="img-fluid"><!-- holder.js/482x241 -->
-					</div>
-					<div class="col-sm-11 col-md-12 col-lg-6 col-xxl-5">
+					<div class="col-sm-11 col-md-12 col-lg-6 col-xl-5">
 						<a href="#" class="text-decoration-none link-dark h5">This is some content from a media component. You can replace this with any content and adjust it as needed</a>
 						<div class="small mt-2 mt-xxl-3">
 							<span class="text-dark pe-2">Kategori</span>
