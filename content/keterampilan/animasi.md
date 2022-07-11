@@ -5,4 +5,5 @@ description: Keterampilan Animasi
 mapel:
 - photoshop
 - animate
+- tugas-akhir
 ---
