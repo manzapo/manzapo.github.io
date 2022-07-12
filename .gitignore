@@ -1,0 +1,5 @@
+# hugo build
+public/
+
+# ghostwriter
+*.md.backup
