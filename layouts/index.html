@@ -66,16 +66,8 @@
 			</div>
 		</div>
 
-		<div class="card mb-xxl-5">
-			<div class="card-body">
-				<h1 class="border-bottom">MATSAMA 2022</h1>
-				<p class="card-text">Masa taaruf santri madrasah</p>
-				<p class="card-text text-black-50">18 - 23 Juli 2022</p>
-			</div>
-		</div>
-
 		<div class="row" id="posts">
-			<div class="col-lg-8 col-xl-9 mb-3">
+			<div class="col-lg-8 col-xl-9 mb-3 mb-xxl-4">
 				<div class="d-flex align-items-center border-bottom">
 					<div class="flex-column mb-2 flex-grow-1">
 						<p class="h5 mb-0">Terbaru</p>
@@ -88,7 +80,7 @@
 			</div>
 			<div class="col-md-8 col-xl-9 mb-xxl-4">
 
-				{{ range first 6 (where .Site.RegularPages.ByDate.Reverse "Type" "posts") }}
+				{{ range first 6 (where .Site.RegularPages.ByWeight "Type" "posts") }}
 
 					{{ partial "excerpt.html" . }}
 

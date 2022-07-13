@@ -7,8 +7,6 @@ categories  :
 - pengumuman
 - sosialisasi
 slug        : {{ .Name }}
+thumbnail   : img/home-thumb.jpg
 weight      : 1
 ---
-<a href="/post/{{ .Name }}/">Selengkapnya</a>
-<!--more-->
-content
