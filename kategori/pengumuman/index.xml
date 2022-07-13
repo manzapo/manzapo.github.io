@@ -14,10 +14,63 @@
       <guid>https://manzapo.github.io/post/matsama-2022/</guid>
       <description>&lt;div class=&#34;card mb-4 mb-xxl-4&#34;&gt;
 	&lt;div class=&#34;card-body&#34;&gt;
-		&lt;h1 class=&#34;border-bottom&#34;&gt;MATSAMA 2022&lt;/h1&gt;
-		&lt;p class=&#34;card-text&#34;&gt;Masa Ta&#39;aruf Siswa Madrasah adalah kegiatan orientasi lingkungan madrasah kepada peserta didik baru. Melalui Matsama, peserta didik baru dikenalkan lingkungan belajar, sistem pembelajaran, dan kultur yang ada di lingkungan madrasah.&lt;/p&gt;
-		&lt;p class=&#34;card-text text-black-50&#34;&gt;18 - 23 Juli 2022&lt;/p&gt;
-		&lt;a href=&#34;https://manzapo.github.io/post/matsama-2022/&#34; class=&#34;card-link&#34;&gt;Selengkapnya&lt;/a&gt;
+		&lt;a href=&#34;https://manzapo.github.io/post/matsama-2022/&#34; class=&#34;link-dark h1 text-decoration-none&#34;&gt;MATSAMA 2022&lt;/a&gt;
+		&lt;p class=&#34;card-text border-top pt-3&#34;&gt;Masa Ta&#39;aruf Siswa Madrasah adalah kegiatan orientasi lingkungan madrasah kepada peserta didik baru. Melalui Matsama, peserta didik baru dikenalkan lingkungan belajar, sistem pembelajaran, dan kultur yang ada di lingkungan madrasah.&lt;/p&gt;
+		&lt;div class=&#34;accordion&#34; id=&#34;agenda-matsama&#34;&gt;
+			&lt;div class=&#34;accordion-item&#34;&gt;
+				&lt;h2 class=&#34;accordion-header&#34;&gt;
+					&lt;button class=&#34;accordion-button collapsed&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#agenda-senin&#34;&gt;
+						Senin, 18 Juli 2022
+					&lt;/button&gt;
+				&lt;/h2&gt;
+				&lt;div class=&#34;accordion-collapse collapse&#34; id=&#34;agenda-senin&#34; data-bs-parent=&#34;#agenda-matsama&#34;&gt;
+					&lt;div class=&#34;accordion-body&#34;&gt;
+						&lt;ul class=&#34;mb-0 ps-3&#34;&gt;
+							&lt;li&gt;Pembukaan&lt;/li&gt;
+							&lt;li&gt;KEMADRASAHAN&lt;/li&gt;
+							&lt;li&gt;Jurusan/Konsentrasi KBM&lt;/li&gt;
+							&lt;li&gt;Wawasan Wiyata Mandala&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&#34;accordion-item&#34;&gt;
+				&lt;h2 class=&#34;accordion-header&#34;&gt;
+					&lt;button class=&#34;accordion-button collapsed&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#agenda-selasa&#34;&gt;
+						Selasa, 19 Juli 2022
+					&lt;/button&gt;
+				&lt;/h2&gt;
+				&lt;div class=&#34;accordion-collapse collapse&#34; id=&#34;agenda-selasa&#34; data-bs-parent=&#34;#agenda-matsama&#34;&gt;
+					&lt;div class=&#34;accordion-body&#34;&gt;
+						&lt;ul class=&#34;mb-0 ps-3&#34;&gt;
+							&lt;li&gt;Karakter Moderasi Beragama dan Kebangsaan&lt;/li&gt;
+							&lt;li&gt;Materi dari Polres&lt;/li&gt;
+							&lt;li&gt;Etika Bermedia Sosial&lt;/li&gt;
+							&lt;li&gt;Madrasah Plus Keterampilan&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;div class=&#34;accordion-item&#34;&gt;
+				&lt;h2 class=&#34;accordion-header&#34;&gt;
+					&lt;button class=&#34;accordion-button collapsed&#34; data-bs-toggle=&#34;collapse&#34; data-bs-target=&#34;#agenda-rabu&#34;&gt;
+						Rabu, 20 Juli 2022
+					&lt;/button&gt;
+				&lt;/h2&gt;
+				&lt;div class=&#34;accordion-collapse collapse&#34; id=&#34;agenda-rabu&#34; data-bs-parent=&#34;#agenda-matsama&#34;&gt;
+					&lt;div class=&#34;accordion-body&#34;&gt;
+						&lt;ul class=&#34;mb-0 ps-3&#34;&gt;
+							&lt;li&gt;Kiat Menjadi Alumni Sukses&lt;/li&gt;
+							&lt;li&gt;Kesehatan Reproduksi Remaja&lt;/li&gt;
+							&lt;li&gt;Kesehatan Reproduksi Remaja&lt;/li&gt;
+							&lt;li&gt;Keorganisasian&lt;/li&gt;
+							&lt;li&gt;Expo Ekstrakurikuler&lt;/li&gt;
+							&lt;li&gt;Penutupan&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
 	&lt;/div&gt;
 &lt;/div&gt;
 </description>
