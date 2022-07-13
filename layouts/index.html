@@ -123,10 +123,12 @@
 		</div>
 		<div class="d-xxl-flex my-xxl-5" id="creadits">
 			<div class="d-xxl-flex flex-xxl-row gap-xxl-4">
-				<a href="#" class="small fw-light text-decoration-none link-dark">Terms of Service</a>
-				<a href="#" class="small fw-light text-decoration-none link-dark">Privacy</a>
-				<a href="#" class="small fw-light text-decoration-none link-dark">About Us</a>
-				<a href="#" class="small fw-light text-decoration-none link-dark">Developers</a>
+				{{ range (where .Site.RegularPages "Section" "pages") }}
+					<a href="{{ .Permalink }}" class="small fw-light text-decoration-none link-dark">{{ .Title }}</a>
+				{{ end }}
+				{{ range .Site.Data.sosmed }}
+					<a href="{{ .link }}" class="small fw-light text-decoration-none link-dark">{{ .title }}</a>
+				{{ end }}
 			</div>
 			<div class="ms-auto fw-light small"><i class="bi bi-patch-check-fill text-primary me-1"></i> PASTI</div>
 		</div>
