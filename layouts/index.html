@@ -104,35 +104,39 @@
 			</div>
 		</div><!-- /#posts -->
 
-		<div class="border bg-success bg-opacity-10 p-3">
-			<div class="d-sm-flex align-items-sm-center border-bottom border-success mb-2 pb-2 pb-sm-0">
-				<h5 class="flex-sm-grow-1">Kategori</h5>
-				{{ with .Site.GetPage "/content/categories/_index.md" }}
-					<a href="{{ .Permalink }}" class="link-success text-decoration-none">Lihat semua</a>
-				{{ end }}
-			</div>
-
-			<div class="row row-cols-1 row-cols-sm-3">
-				{{ range .Site.Taxonomies.categories }}
-					<div class="col">
-						<a href="{{ .Page.Permalink }}" class="lead link-dark text-decoration-none fw-bold">{{ .Page.Title }}</a>
-						<p class="mb-sm-0 text-black-50">{{ .Page.Params.description }}</p>
-					</div>
-				{{ end }}
-			</div>
-		</div>
-		
 	</div>
 {{ end }}
 
 {{ define "footer" }}
-	<div class="container">
-		<div class="d-sm-flex align-items-center border-top py-3 py-sm-2">
-			<div class="flex-sm-grow-1 ms-sm-3 text-secondary text-center text-sm-start">2021-2022 <strong>kolektif</strong>.my.id</div>
-			<nav class="nav justify-content-center justify-content-sm-start">
-				<a href="#" class="nav-link link-secondary"><i class="bi bi-instagram"></i> Instagram</a>
-				<a href="#" class="nav-link link-secondary"><i class="bi bi-youtube"></i> YouTube</a>
-			</nav>
+	<div class="container mb-xxl-5">
+		<div class="border-top pt-xxl-5">
+			<div class="row">
+				<div class="col-xxl-2">
+					<div class="fw-bold mb-xxl-2">Kategori</div>
+					<ul class="list-unstyled">
+						{{ range .Site.Taxonomies.categories }}
+							<li class="mb-xxl-2"><a href="{{ .Page.Permalink }}" class="text-decoration-none link-dark fw-light">{{ .Page.Title }}</a></li>
+						{{ end }}
+					</ul>
+				</div>
+				<div class="col-xxl-2">
+					<div class="fw-bold mb-xxl-2">Keterampilan</div>
+					<ul class="list-unstyled">
+						{{ range where (where .Site.Pages "Section" "keterampilan").ByTitle "Params.slug" "ne" "keterampilan" }}
+							<li class="mb-xxl-2"><a href="{{ .Permalink }}" class="text-decoration-none link-dark fw-light">{{ .Title }}</a></li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="d-xxl-flex my-xxl-5" id="creadits">
+			<div class="d-xxl-flex flex-xxl-row gap-xxl-4">
+				<a href="#" class="small fw-light text-decoration-none link-dark">Terms of Service</a>
+				<a href="#" class="small fw-light text-decoration-none link-dark">Privacy</a>
+				<a href="#" class="small fw-light text-decoration-none link-dark">About Us</a>
+				<a href="#" class="small fw-light text-decoration-none link-dark">Developers</a>
+			</div>
+			<div class="ms-auto fw-light small"><i class="bi bi-patch-check-fill text-primary me-1"></i> PASTI</div>
 		</div>
 	</div>
 {{ end }}
