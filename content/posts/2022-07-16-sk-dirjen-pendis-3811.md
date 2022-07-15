@@ -13,4 +13,7 @@ Madrasah yang telah ditetapkan sebagai pelaksana kurikulum merdeka dapat mengimp
 
 Madrasah yang sudah mendaftar pada aplikasi PDUM, tetapi belum ditetapkan sebagai pelaksana kurikulum merdeka, serta madrasah yang belum mendaftar, dapat melakukan persiapan secara mandiri implementasi kurikulum merdeka.
 
-[Lampiran](https://www.dropbox.com/s/ihq3b2b2zeqt7w2/sk-dirjen-pendis-3811-2022-pelaksana-kurmer.pdf?dl=1)
+**Lampiran**
+
+- [Keputusan Direktur Jenderal Pendidikan Islam Nomor 3811 Tahun 2022](https://www.dropbox.com/s/ihq3b2b2zeqt7w2/sk-dirjen-pendis-3811-2022-pelaksana-kurmer.pdf?dl=1)
+- [Undangan Peserta Bimbingan Teknis Implementasi Kurikulum Merdeka se-Jawa Timur](https://www.dropbox.com/s/rkij0srym215pqe/undangan-bimtek-kurmer-jatim.pdf?dl=1)
