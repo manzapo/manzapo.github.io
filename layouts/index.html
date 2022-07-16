@@ -16,13 +16,10 @@
 		<div id="carouselExampleFade" class="carousel slide carousel-fade mb-3 mb-lg-4 mb-xxl-5" data-bs-ride="carousel">
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="{{ "assets/img/slide1.svg" | absURL }}" class="d-block w-100">
+					<img src="{{ "assets/img/pengumuman-ppdb-2022.jpg" | absURL }}" class="d-block w-100">
 				</div>
 				<div class="carousel-item">
-					<img src="{{ "assets/img/slide2.svg" | absURL }}" class="d-block w-100">
-				</div>
-				<div class="carousel-item">
-					<img src="{{ "assets/img/slide3.svg" | absURL }}" class="d-block w-100">
+					<img src="{{ "assets/img/pondok-ramadhan-2022.jpg" | absURL }}" class="d-block w-100">
 				</div>
 			</div>
 			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -32,36 +29,42 @@
 				<span class="carousel-control-next-icon" aria-hidden="true"></span>
 			</button>
 		</div>
-		
-		<div class="row row-cols-1 row-cols-lg-3 mb-5">
+
+		<div class="row row-cols-1 row-cols-lg-3 mb-5" id="categories">
 			<div class="col d-flex align-items-start">
 				<div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-					<i class="bi bi-toggles2"></i>
+					<i class="bi bi-app-indicator"></i>
 				</div>
 				<div>
-					<h2>Pengumuman</h2>
-					<p class="text-secondary">Informasi resmi dari madrasah</p>
-					<a href="#" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Call to action<i class="bi bi-chevron-right"></i></a>
+					{{ with .Site.GetPage "content/categories/pengumuman/_index.md" }}
+						<h2>{{ .Title }}</h2>
+						<p class="text-secondary">{{ .Description }}</p>
+						<a href="{{ .Permalink }}" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Selengkapnya<i class="bi bi-chevron-right"></i></a>
+					{{ end }}
 				</div>
 			</div>
 			<div class="col d-flex align-items-start">
 				<div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-					<i class="bi bi-cpu-fill"></i>
+					<i class="bi bi-image"></i>
 				</div>
 				<div>
-					<h2>Dokumentasi</h2>
-					<p class="text-secondary">Arsip kegiatan di madrasah</p>
-					<a href="#" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Call to action<i class="bi bi-chevron-right"></i></a>
+					{{ with .Site.GetPage "content/categories/dokumentasi/_index.md" }}
+						<h2>{{ .Title }}</h2>
+						<p class="text-secondary">{{ .Description }}</p>
+						<a href="{{ .Permalink }}" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Selengkapnya<i class="bi bi-chevron-right"></i></a>
+					{{ end }}
 				</div>
 			</div>
 			<div class="col d-flex align-items-start">
 				<div class="icon-square bg-light text-dark d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
-					<i class="bi bi-tools"></i>
+					<i class="bi bi-journals"></i>
 				</div>
 				<div>
-					<h2>Pustaka</h2>
-					<p class="text-secondary">Referensi belajar mandiri</p>
-					<a href="#series" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Call to action<i class="bi bi-chevron-right"></i></a>
+					{{ with .Site.GetPage "content/series/_index.md" }}
+						<h2>{{ .Title }}</h2>
+						<p class="text-secondary">{{ .Description }}</p>
+						<a href="{{ .Permalink }}" class="icon-link d-inline-flex align-items-center text-decoration-none link-success">Selengkapnya<i class="bi bi-chevron-right"></i></a>
+					{{ end }}
 				</div>
 			</div>
 		</div>
