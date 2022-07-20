@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>HTML on manzapo.github.io</title>
-    <link>https://manzapo.github.io/series/html/</link>
+    <link>https://kolektif.my.id/series/html/</link>
     <description>Recent content in HTML on manzapo.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Feb 2022 15:46:27 +0700</lastBuildDate><atom:link href="https://manzapo.github.io/series/html/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Feb 2022 15:46:27 +0700</lastBuildDate><atom:link href="https://kolektif.my.id/series/html/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Struktur Dasar HTML</title>
-      <link>https://manzapo.github.io/series/html/struktur-dasar/</link>
+      <link>https://kolektif.my.id/series/html/struktur-dasar/</link>
       <pubDate>Sat, 05 Feb 2022 15:50:21 +0700</pubDate>
       
-      <guid>https://manzapo.github.io/series/html/struktur-dasar/</guid>
+      <guid>https://kolektif.my.id/series/html/struktur-dasar/</guid>
       <description>HTML (Hypertext Markup Language) adalah bahasa pemrograman yang digunakan untuk membuat halaman web. Struktur dasarnya seperti contoh code berikut
 &amp;lt;html&amp;gt; &amp;lt;!-- awal dokumen html --&amp;gt; &amp;lt;head&amp;gt; &amp;lt;!-- element pendukung dokumen disimpan dalam head --&amp;gt; &amp;lt;title&amp;gt;Judul Laman&amp;lt;/title&amp;gt; &amp;lt;!-- judul halaman --&amp;gt; &amp;lt;/head&amp;gt; &amp;lt;body&amp;gt; &amp;lt;!-- Konten untuk ditampilkan ditulis disini (dalam body) --&amp;gt; Hello World! &amp;lt;/body&amp;gt; &amp;lt;/html&amp;gt; Kode bahasa pemrograman HTML ditulis dengan teks editor. Sebagai permulaan silakan salin kode di atas, masukkan dalam dokumen teks, dan simpan dalam format html (nama file: index.</description>
     </item>
