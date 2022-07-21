@@ -7,3 +7,4 @@ Dikelola secara kolektif untuk tujuan pengarsipan dan mengabarkan kebaikan
 * [Holder.js](https://github.com/imsky/holder/commits/master)
 * [Roboto Flex](https://fonts.google.com/specimen/Roboto+Flex)
 * [Bootstrap Icons](https://github.com/twbs/icons/releases) `v1.9.1`
+* [Masonry](https://github.com/desandro/masonry/releases) `v4.2.2`

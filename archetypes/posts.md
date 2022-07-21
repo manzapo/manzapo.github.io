@@ -10,4 +10,6 @@ slug        : {{ .Name }}
 thumbnail   : img/home-thumb.jpg
 weight      : 1
 layout      : small
+javascript  :
+- masonry.pkgd.min.js
 ---

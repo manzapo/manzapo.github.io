@@ -40,7 +40,11 @@
 
 		<script src="{{ "assets/js/bootstrap.bundle.min.js" | absURL }}"></script>
 		{{ block "javascript" . }}
-			<!-- custom script -->
+			{{ if .Page.Params.javascript }}
+				{{ range .Page.Params.javascript }}
+					<script type="text/javascript" src="/assets/js/{{ . }}"></script>
+				{{ end }}
+			{{ end }}
 		{{ end }}
 	</body>
 </html>

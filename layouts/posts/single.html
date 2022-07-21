@@ -15,5 +15,10 @@
 {{ end }}
 
 {{ define "javascript" }}
-<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+	<script type="text/javascript" src="/assets/js/sticky-footer.js"></script>
+	{{ if .Page.Params.javascript }}
+		{{ range .Page.Params.javascript }}
+			<script type="text/javascript" src="/assets/js/{{ . }}"></script>
+		{{ end }}
+	{{ end }}
 {{ end }}
