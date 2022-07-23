@@ -13,7 +13,7 @@
 				<div class="card">
 					<div class="card-header">{{ .Page.Description }}</div>
 					<div class="list-group list-group-flush">
-						{{ range .Pages.ByDate }}
+						{{ range .Pages.Reverse }}
 							<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">
 								<div class="lead fw-bold">{{ .Title }}</div>
 								<small class="text-muted">{{ .Description }}</small>
@@ -22,7 +22,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- <div class="col-md-4 col-xl-3"></div> -->
+			<!-- col-md-4 col-xl-3 -->
 		</div>
 	</div>
 {{ end }}
