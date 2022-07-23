@@ -2,7 +2,7 @@
 	<div class="container">
 		<h1 class="my-3 my-xxl-5">{{ .Page.Title }}</h1>
 		<div class="list-group mb-3 mb-xl-5">
-			{{ range where (where .Site.Pages "Section" "series") "Params.slug" "in" .Page.Params.mapel }}
+			{{ range where (where .Site.Pages "Section" "series").ByTitle "Params.slug" "in" .Page.Params.mapel }}
 				<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">{{ .Title }}</a>
 			{{ end }}
 		</div>

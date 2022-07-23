@@ -5,7 +5,7 @@
 		<div class="card my-3 my-xl-5">
 			<div class="card-header">{{ .Page.Title }}</div>
 			<div class="list-group list-group-flush">
-				{{ range .Pages }}
+				{{ range .Pages.ByTitle }}
 					<a href="{{ .Permalink }}" class="list-group-item list-group-item-action">
 						<div class="lead fw-bold">{{ .Title }}</div>
 						<small class="text-muted">{{ .Description }}</small>
