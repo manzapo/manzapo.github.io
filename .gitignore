@@ -1,6 +1,8 @@
 # hugo build
 public/
 resources/
+.hugo_build.lock
+hugo.exe
 
 # ghostwriter
 *.md.backup
