@@ -1,5 +1,6 @@
 # hugo build
 public/
+resources/
 
 # ghostwriter
 *.md.backup

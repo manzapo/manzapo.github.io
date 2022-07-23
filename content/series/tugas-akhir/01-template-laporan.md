@@ -1,8 +1,8 @@
 ---
-date: 2022-01-12T20:12:04+07:00
-title: Template Laporan
-description: Unduh Template
-slug: template-laporan
+date        : 2022-01-12T20:12:04+07:00
+title       : Template Laporan
+description : Unduh Template
+slug        : template-laporan
 ---
 <div class="mt-4 mb-5">
   <div class="card">
